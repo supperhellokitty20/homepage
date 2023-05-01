@@ -4,7 +4,6 @@ import * as THREE from 'three';
 import { DiamondContainer,DiamondSpinner} from './diamond-loader';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import React ,{useRef, useState, useEffect, useCallback} from 'react';
-import { SemicolonPreference } from 'typescript';
 
 function loadGLTFModel(
     scene: Scene,
@@ -76,9 +75,8 @@ const DiamondBoy = () => {
         const { current: renderer } = refRenderer
         const { current: container } = refContainer
         if (container && renderer) {
-          const scW = container.clientWidth
+          const scW = container.clientWidth 
           const scH = container.clientHeight
-    
           renderer.setSize(scW, scH)
         }
       }, [])
