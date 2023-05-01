@@ -36,7 +36,7 @@ export default function Home() {
         bg={useColorModeValue('blueAlpha.200', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello there 👋 I'm a developer , dreamer and artist from Viet Nam 🇻🇳  
+        Hello there 👋 I&apos;m a developer , dreamer and artist from Viet Nam 🇻🇳  
     </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -166,7 +166,7 @@ export default function Home() {
         </List> 
     </Section>
 
-
+     
 
 
     </Container>

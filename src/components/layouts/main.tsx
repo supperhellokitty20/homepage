@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import type Router from 'next/router';
 import {
     Box,
     Container
@@ -6,6 +7,7 @@ import {
 import dynamic from 'next/dynamic'
 import DiamondLoader from '../diamondhand/diamond-loader';
 import Nav from '../nav';
+import Footer from '../footer';
 const LazyLoad = dynamic(
     () => import('../diamondhand/diamond'),
     {
@@ -16,9 +18,11 @@ const LazyLoad = dynamic(
   
 
 export default function RootLayout({
-    children
+    children,
+    router 
 }: {
     children: React.ReactNode
+    router :any 
 }) {
     return (
         <Box as='main' pb={8}>
@@ -33,12 +37,13 @@ export default function RootLayout({
                 <meta property="og:type" content="website" />
                 <title>Tuan Nguyen- Homepage</title>
             </Head>
-            <Nav></Nav>
+            <Nav path={router.asPath}></Nav>
             <Container maxW="container.md" pt={14}> 
                 <LazyLoad/>
                 <br/><br/> 
                 {children}
             </Container>
+            <Footer></Footer>
         </Box>
     )
 }

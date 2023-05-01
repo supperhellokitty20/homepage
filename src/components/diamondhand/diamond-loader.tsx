@@ -14,9 +14,9 @@ export const DiamondSpinner:React.FC =() => {
         mt="calc(0px - var(--spinner-size))" />;    
 }
 
-export const DiamondContainer= forwardRef(({children}:{children:ReactNode}, ref) => {
+export const DiamondContainer= forwardRef(({children}:{children:ReactNode}, ref:any) => {
     return <Box
-        ref={ref}
+        ref={ref} 
         className="diamond-container"
         m="auto"
         mt={['-20px', '-60px', '-120px']}
