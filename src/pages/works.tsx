@@ -13,7 +13,7 @@ const Works:React.FC = ()=> {
                 display={{ md: 'flex' }}
                 textAlign={'center'}
             > 
-                <Heading>Works</Heading>
+                <Heading as='h1'>Anh YEUU e luu KIM NGANN HIHI</Heading>
             </Box>
         </Layout>
     )
