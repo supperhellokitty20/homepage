@@ -4,6 +4,7 @@ import {
   motion 
 } from 'framer-motion'
 import NextLink from 'next/link';
+import Logo from './logo';
 import { 
   HamburgerIcon
 } from '@chakra-ui/icons';
@@ -101,10 +102,11 @@ export default function Nav(props:any) {
             <Heading
               as ='h1'
             >
-              <Link
+              {/* <Link
                 as ={NextLink}
                 href = '/' 
-              >Logo</Link>
+              >Logo</Link> */}
+              <Logo/>
             </Heading>
           </Flex>
           <Stack
@@ -118,7 +120,7 @@ export default function Nav(props:any) {
           <NavLink href="/works" path={path}>
             Works
           </NavLink>
-          <NavLink href="/" path={path}>
+          <NavLink href="/posts" path={path}>
             Posts 
           </NavLink>
           <NavLink

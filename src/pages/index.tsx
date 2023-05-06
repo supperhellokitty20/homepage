@@ -9,7 +9,7 @@ import {
   List, 
   ListItem
 } from '@chakra-ui/react'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import { 
   ChevronRightIcon
 } from '@chakra-ui/icons'
@@ -165,10 +165,6 @@ export default function Home() {
           </ListItem>
         </List> 
     </Section>
-
-     
-
-
     </Container>
     </Layout>
   )
