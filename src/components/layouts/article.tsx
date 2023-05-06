@@ -4,6 +4,8 @@ import {
     motion, 
     useScroll , 
 } from 'framer-motion'
+import { WorkGridItemThumbStyle } from '../grid-items'
+
 
 const ArticleLayout = ({
     children,
@@ -40,6 +42,7 @@ const ArticleLayout = ({
             )
           } 
             {children}
+          <WorkGridItemThumbStyle/>
         </>
     </motion.article>
     ) ;
