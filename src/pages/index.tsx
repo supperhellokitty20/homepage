@@ -83,7 +83,7 @@ export default function Home() {
       <Box  textAlign={'center'} my={4}> 
         <Button 
         as={NextLink}
-        href=""
+        href="/works"
         scroll={false}
         rightIcon={<ChevronRightIcon/>}
         colorScheme='teal'
@@ -122,7 +122,8 @@ export default function Home() {
       </BioSection>
       <BioSection> 
         <BioYear>2022</BioYear>
-        System Engineer working for <Link href='https://www.dektech.com.au/our-company/'>DEK tech</Link>
+       System Engineer working for <Link href='https://www.dektech.com.au/our-company/'>DEK tech</Link>.
+       Job involves maintaining <Link href='https://www.ericsson.com/en/portfolio/cloud-software--services/cloud-core/communication-services--udm/cloud-ims/call-session-control-function'>CSCF</Link> for our customer <Link href="https://www.ericsson.com/en">Ericsson</Link>.
       </BioSection>
     </Section>
     <Section delay={0.3}> 
