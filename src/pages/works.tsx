@@ -2,12 +2,16 @@ import React from 'react'
 import Layout from '@/components/layouts/article'
 import Section from '@/components/section'
 import avatarThumb from '/public/avatar.png'
+import Paragraph from '@/components/paragraph'
+import NextLink from 'next/link'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
     Container,
     Heading,
     Box ,
     SimpleGrid,
-    Divider
+    Divider ,
+    Link
  } from '@chakra-ui/react'
 
 import WorkGridItem from '@/components/grid-items'
@@ -23,44 +27,40 @@ const Works:React.FC = ()=> {
                 > 
                     <Heading as='h3'> Works  </Heading>
                     <SimpleGrid columns={[1,1,2]} gap={6}>
-                        {
-                            /**
-                             * Works done personally
-                             */
-                        }
                         <Section>
                             <WorkGridItem   title={'Moice'} id={'moice'} thumbnails={avatarThumb}> 
-                                Moice
+                                A P2P video and messaging chat app used WebRTC technology  
                             </WorkGridItem>
                         </Section>
                         <Section delay={0.1}> 
-                            <WorkGridItem   title={'Cybernetic transform'} id={''}  thumbnails={avatarThumb}> 
-                                A cybernetic transform
+                            <WorkGridItem   title={'Blackwolf BBQ site'} id={'blackwolf'}  thumbnails={avatarThumb}> 
+                                This was a freelance jobs done for a local restaurant in Orrangle ville , Toronto
                             </WorkGridItem>
                         </Section>
                         <Section delay={0.1}> 
-                            <WorkGridItem   title={'Art transformer'} id={''}  thumbnails={avatarThumb}> 
-                                Art transformer transform your art 
+                            <WorkGridItem   title={'StableVision Dungeonizer'} id={'dungeon'}  thumbnails={avatarThumb}> 
+                                Using Deep Learning to transform video into Rock and Roll Dungeons Image sequel demo 
                             </WorkGridItem>
                         </Section>
                         <Section delay={0.1}> 
-                            <WorkGridItem   title={'Lorem ispum'} id={''}  thumbnails={avatarThumb}> 
-                                Art transformer transform your art 
+                            <WorkGridItem   title={'Safe Night'} id={'safenight'}  thumbnails={avatarThumb}> 
+                                Advance space management solution for shelter homes for savings lives
                             </WorkGridItem>
                         </Section>
-                        {
-                            /**
-                             * Collaborations
-                             */
-                        }
-                        <Section delay={0.2}>
-                            <Divider my={5} />
-                            <Heading as='h3'>Achievements</Heading>
-                        </Section>
+
                     </SimpleGrid>
+                    <Section delay={0.2}>
+                        <Divider my={5} mb={4} />
+                        <Heading as='h3' mb={6}>Achievements</Heading>
+                        <Paragraph> 
+                            Project <Link href="">SafeNight</Link> 2nd place at 2022 Lassonde's <Link href=""> BEST Lab</Link>&apos;s Start Up Experience(<Link as={NextLink} href="https://lassonde.yorku.ca/best-startup-experience-2022">Article<ExternalLinkIcon mx={1}/></Link>{" "}/{" "}  
+                                <Link as={NextLink} href="https://lassonde.yorku.ca/best/">Certificate<ExternalLinkIcon mx={1}/></Link> 
+                            )
+                        </Paragraph>
+                    </Section>
+
                 </Box>
             </Container>
-
         </Layout>
     )
 }
