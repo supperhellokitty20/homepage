@@ -38,7 +38,7 @@ export default function RootLayout({
                 <title>Tuan Nguyen- Homepage</title>
             </Head>
             <Nav path={router.asPath}></Nav>
-            <Container maxW="container.md" pt={14}> 
+            <Container maxW="container.md" pt={20}> 
                 <LazyLoad/>
                 <br/><br/> 
                 {children}
