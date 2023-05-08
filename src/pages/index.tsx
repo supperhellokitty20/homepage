@@ -9,7 +9,7 @@ import {
   List, 
   ListItem
 } from '@chakra-ui/react'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoMail} from 'react-icons/io5'
 import { 
   ChevronRightIcon
 } from '@chakra-ui/icons'
@@ -113,7 +113,7 @@ export default function Home() {
       </BioSection>
       <BioSection> 
         <BioYear>2021</BioYear>
-        Production intern at  <Link 
+        Software Production intern at  <Link 
         as= {NextLink}
         href='https://www.smartpayvn.com/'
         >
@@ -123,7 +123,7 @@ export default function Home() {
       <BioSection> 
         <BioYear>2022</BioYear>
        System Engineer working for <Link href='https://www.dektech.com.au/our-company/'>DEK tech</Link>.
-       Job involves maintaining <Link href='https://www.ericsson.com/en/portfolio/cloud-software--services/cloud-core/communication-services--udm/cloud-ims/call-session-control-function'>CSCF</Link> for our customer <Link href="https://www.ericsson.com/en">Ericsson</Link>.
+       Job involves maintaining Telecommunication grade software  <Link href='https://www.ericsson.com/en/portfolio/cloud-software--services/cloud-core/communication-services--udm/cloud-ims/call-session-control-function'>CSCF</Link> for our customer <Link href="https://www.ericsson.com/en">Ericsson</Link>.
       </BioSection>
     </Section>
     <Section delay={0.3}> 
@@ -161,6 +161,17 @@ export default function Home() {
                 leftIcon={<IoLogoInstagram />}
               >
                 @bi.dayne_
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="mailto:tuanheo004@icloud.com" target="_blank">
+              <Button
+               variant="ghost"
+               colorScheme="orange"
+               leftIcon={<IoMail/>} 
+              > 
+                tuanheo004@icloud.com  
               </Button>
             </Link>
           </ListItem>
