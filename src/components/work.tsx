@@ -4,8 +4,21 @@ import {
     Box , 
     Image , 
     Link, 
+    Badge
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+
+export const ArticleInfoBadge= ({children}:{children:any}) => {
+    return (
+        <Badge
+            colorScheme="green"
+            mr={2}
+            mx={5}
+        >
+            {children}
+        </Badge>
+    )
+}  
 
 /**
  * Works > Title components 

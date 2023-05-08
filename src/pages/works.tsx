@@ -5,13 +5,17 @@ import avatarThumb from '/public/avatar.png'
 import Paragraph from '@/components/paragraph'
 import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import {HiRocketLaunch } from "react-icons/hi2";
 import {
     Container,
     Heading,
     Box ,
     SimpleGrid,
     Divider ,
-    Link
+    Link,
+    List, 
+    ListItem,
+    ListIcon
  } from '@chakra-ui/react'
 
 import WorkGridItem from '@/components/grid-items'
@@ -44,7 +48,7 @@ const Works:React.FC = ()=> {
                         </Section>
                         <Section delay={0.1}> 
                             <WorkGridItem   title={'Safe Night'} id={'safenight'}  thumbnails={avatarThumb}> 
-                                Advance space management solution for shelter homes for savings lives
+                                Advance space management solution for shelter homes for savings lives  
                             </WorkGridItem>
                         </Section>
 
@@ -52,11 +56,16 @@ const Works:React.FC = ()=> {
                     <Section delay={0.2}>
                         <Divider my={5} mb={4} />
                         <Heading as='h3' mb={6}>Achievements</Heading>
-                        <Paragraph> 
-                            Project <Link href="">SafeNight</Link> 2nd place at 2022 Lassonde's <Link href=""> BEST Lab</Link>&apos;s Start Up Experience(<Link as={NextLink} href="https://lassonde.yorku.ca/best-startup-experience-2022">Article<ExternalLinkIcon mx={1}/></Link>{" "}/{" "}  
-                                <Link as={NextLink} href="https://lassonde.yorku.ca/best/">Certificate<ExternalLinkIcon mx={1}/></Link> 
-                            )
-                        </Paragraph>
+                            <List spacing={3}> 
+                                <ListItem>
+                                    <ListIcon as={HiRocketLaunch} color="green.500" />
+                                    <Link href="/works/safenight">Safe Night</Link> won 2nd place at 2022 Lassonde's <Link href=""> BEST Lab</Link>&apos;s Start Up Experience(
+                                        <Link as={NextLink} href="https://lassonde.yorku.ca/best-startup-experience-2022">Article<ExternalLinkIcon mx={1}/></Link>
+                                        {" "}/{" "}  
+                                        <Link as={NextLink} href="https://lassonde.yorku.ca/best/">Certificate<ExternalLinkIcon mx={1}/></Link> 
+                                    )
+                                </ListItem>
+                            </List>
                     </Section>
 
                 </Box>

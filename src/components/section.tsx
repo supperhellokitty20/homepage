@@ -10,7 +10,7 @@ const StyledDiv = chakra(motion.div, {
 
 const Section = ({ children, delay = 0 }:{
     children: React.ReactNode ,
-    delay : any 
+    delay ?: number  
 }) => (
   <StyledDiv
     initial={{ y: 10, opacity: 0 }}
