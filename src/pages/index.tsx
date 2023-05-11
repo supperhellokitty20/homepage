@@ -171,7 +171,7 @@ export default function Home() {
                colorScheme="orange"
                leftIcon={<IoMail/>} 
               > 
-                tuanheo004@icloud.com  
+                bebi2kvip@master-rizz.lol
               </Button>
             </Link>
           </ListItem>
