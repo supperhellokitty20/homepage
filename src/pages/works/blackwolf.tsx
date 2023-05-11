@@ -21,34 +21,27 @@ const Work = ()=> {
             <Container
             >
                 <Title>
-                    Moice <Badge>2019</Badge>
+                    Black Wolf<Badge>2019</Badge>
                 </Title>
                 <P>
-                    A decentralized video and messaging app (p2p) built on top of the WebRTC platform. 
-                    Now you can call your friends without big company selling your data or listen to, sweets :D   
-
+                    A landing page for a local cowboy style restaurant in Orangeville,Canada. 
                 </P>
                 <List ml={4} my={3}>
                     <ListItem>
                         <ArticleInfoBadge>Platform</ArticleInfoBadge> 
                         <span>
-                            Web
+                            Web 
                         </span>
                     </ListItem>
                     <ListItem>
                         <ArticleInfoBadge>Stack</ArticleInfoBadge> 
                         <span>
-                            React , WebRTC , PeerJS  
+                            Square
                         </span>                    
                     </ListItem>
                     <ListItem>
-                        <ArticleInfoBadge>Dev logs</ArticleInfoBadge> 
-                        <Link href="/" >How i create Moice ? <ExternalLinkIcon mx={2}/>
-                        </Link>
-                    </ListItem>
-                    <ListItem>
                         <ArticleInfoBadge
-                        >Demo</ArticleInfoBadge> 
+                        >Live website</ArticleInfoBadge> 
                         <Link href="/" >Check it out <ExternalLinkIcon mx={2}/></Link>
                     </ListItem>
                 </List>

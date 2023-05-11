@@ -70,7 +70,7 @@ const DiamondBoy = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const refRenderer = useRef()
-    const modelPath = '/diamond_hands.glb' ;
+    const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.master-rizz.lol/static':'')+'/diamond_hands.glb' 
     const handleWindowResize = useCallback(() => {
         const { current: renderer } = refRenderer
         const { current: container } = refContainer

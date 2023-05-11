@@ -7,11 +7,12 @@ import {
     Badge
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { color } from 'framer-motion'
 
-export const ArticleInfoBadge= ({children}:{children:any}) => {
+export const ArticleInfoBadge= ({children}:{children:any}, color?:string) => {
     return (
         <Badge
-            colorScheme="green"
+            colorScheme="teal"      
             mr={2}
             mx={5}
         >
