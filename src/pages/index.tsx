@@ -165,7 +165,7 @@ export default function Home() {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="mailto:tuanheo004@icloud.com" target="_blank">
+            <Link href="mailto:bebi2kvip@master-rizz.lol" target="_blank">
               <Button
                variant="ghost"
                colorScheme="orange"
