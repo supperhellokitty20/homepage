@@ -22,7 +22,7 @@ function loadGLTFModel(
             (gltf) => {
                 const obj = gltf.scene;
                 obj.name = 'diamond';
-                obj.position.y = 7; 
+                obj.position.y = -0.4; 
                 obj.position.x = 0 ;
                 obj.receiveShadow = receiveShadow;
                 obj.castShadow =  castShadow;
@@ -30,26 +30,27 @@ function loadGLTFModel(
 
                 obj.traverse((child) => {
                     if ((child as Mesh).isMesh) {
-                        //Change the material of two diamonds 
-                        if(child.name=="Object_76"||child.name=="Object_79"){ 
-                            const meshPhongParams:THREE.MeshPhongMaterialParameters ={ 
-                                color:0x096775,
-                                shininess:10,
-                                reflectivity:5
+                        //TODO : Uncomment this if use diamond hands model 
+                        // //Change the material of two diamonds 
+                        // if(child.name=="Object_76"||child.name=="Object_79"){ 
+                        //     const meshPhongParams:THREE.MeshPhongMaterialParameters ={ 
+                        //         color:0x096775,
+                        //         shininess:10,
+                        //         reflectivity:5
 
-                            } ;
-                            (child as Mesh).material = new THREE.MeshPhongMaterial(meshPhongParams) ;
-                        }
-                        if(child.name=="Object_77"||child.name=="Object_80"){
-                            const meshPhongParams:THREE.MeshPhongMaterialParameters ={ 
-                                color:0x034e59,
-                                shininess:10,
-                                reflectivity:5
+                        //     } ;
+                        //     (child as Mesh).material = new THREE.MeshPhongMaterial(meshPhongParams) ;
+                        // }
+                        // if(child.name=="Object_77"||child.name=="Object_80"){
+                        //     const meshPhongParams:THREE.MeshPhongMaterialParameters ={ 
+                        //         color:0x034e59,
+                        //         shininess:10,
+                        //         reflectivity:5
 
-                            } ;
-                            (child as Mesh).material = new THREE.MeshPhongMaterial(meshPhongParams) ;
+                        //     } ;
+                        //     (child as Mesh).material = new THREE.MeshPhongMaterial(meshPhongParams) ;
 
-                        }
+                        // }
                         //End change material
                         child.castShadow = castShadow;
                         child.receiveShadow = receiveShadow;
@@ -73,7 +74,7 @@ const DiamondBoy = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const refRenderer = useRef()
-    const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.master-rizz.lol/static':'')+'/compressed.glb' 
+    const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.master-rizz.lol/static':'')+'/voxel-compressed.glb' 
     // const modelPath = "https://cdn.master-rizz.lol/static/diamond_hands.glb"
     const handleWindowResize = useCallback(() => {
         const { current: renderer } = refRenderer
@@ -100,8 +101,8 @@ const DiamondBoy = () => {
           container.appendChild(renderer.domElement)
           refRenderer.current = renderer
           const scene = new THREE.Scene()
-          //Reduce the scale due to the size of the model
-          scene.scale.set(0.4, 0.4, 0.4) ;
+          // //Reduce the scale due to the size of the model
+          scene.scale.set(9, 9, 9) ;
 
           const target = new THREE.Vector3(-0.5, 1.2, 0)
           const initialCameraPosition = new THREE.Vector3(
@@ -124,14 +125,15 @@ const DiamondBoy = () => {
           camera.position.copy(initialCameraPosition)
           camera.lookAt(target)
           //Add lightning to the scene 
-          const directLight = new THREE.DirectionalLight(0xffffff, 3) 
-          directLight.position.set(7.474, 6.367, 13.368) ;
-          scene.add(directLight) ;
+          // const directLight = new THREE.DirectionalLight(0xffffff, 3) 
+          // directLight.position.set(7.474, 6.367, 13.368) ;
+          // scene.add(directLight) ;
 
-          const directBackLight = new THREE.DirectionalLight(0xffffff, 4) 
-          directBackLight.position.set(-11.752,12.007,-16.995) ;
-          scene.add(directBackLight) ;
-
+          // const directBackLight = new THREE.DirectionalLight(0xffffff, 4) 
+          // directBackLight.position.set(-11.752,12.007,-16.995) ;
+          // scene.add(directBackLight) ;
+          const ambient = new THREE.AmbientLight(0x808080, 4)
+          scene.add(ambient)
           const controls = new OrbitControls(camera, renderer.domElement)
           controls.autoRotate = true
           controls.target = target
