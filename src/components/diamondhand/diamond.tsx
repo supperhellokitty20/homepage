@@ -1,4 +1,5 @@
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import  {Scene,Mesh,MeshStandardMaterial} from 'three';
 import * as THREE from 'three';
 import { DiamondContainer,DiamondSpinner} from './diamond-loader';
@@ -14,6 +15,8 @@ function loadGLTFModel(
     const {receiveShadow, castShadow } = options;    
     return new Promise((resolve, reject) => {
         const loader = new GLTFLoader();
+        const draco = new DRACOLoader().setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
+        loader.setDRACOLoader(draco);
         loader.load( 
             glbPath,
             (gltf) => {
@@ -70,7 +73,7 @@ const DiamondBoy = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const refRenderer = useRef()
-    const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.master-rizz.lol/static':'')+'/diamond_hands.glb' 
+    const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.master-rizz.lol/static':'')+'/compressed.glb' 
     // const modelPath = "https://cdn.master-rizz.lol/static/diamond_hands.glb"
     const handleWindowResize = useCallback(() => {
         const { current: renderer } = refRenderer
