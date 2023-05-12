@@ -123,7 +123,7 @@ export default function Home() {
       <BioSection> 
         <BioYear>2022</BioYear>
        System Engineer working for <Link href='https://www.dektech.com.au/our-company/'>DEK tech</Link>.
-       Job involves maintaining Telecommunication grade software  <Link href='https://www.ericsson.com/en/portfolio/cloud-software--services/cloud-core/communication-services--udm/cloud-ims/call-session-control-function'>CSCF</Link> for our customer <Link href="https://www.ericsson.com/en">Ericsson</Link>.
+       Job involves maintaining Telecommunication grade software  <Link href='https://www.ericsson.com/en/portfolio/cloud-software--services/cloud-core/communication-services--udm/cloud-ims/call-session-control-function'>CSCF</Link> .
       </BioSection>
     </Section>
     <Section delay={0.3}> 
