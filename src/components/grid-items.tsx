@@ -17,8 +17,15 @@ export interface IWorkGridItem {
     thumbnails: StaticImageData,
 
 }
+export interface IPostGridItem {
+    children:any,
+    title:string,
+    id:string ,
+    thumbnails: StaticImageData,
 
-const WorkGridItem = ({children,title ,id,thumbnails}:IWorkGridItem) => {
+}
+
+export const WorkGridItem = ({children,title ,id,thumbnails}:IWorkGridItem) => {
     return(
         <Box 
         w='100%'
@@ -37,6 +44,33 @@ const WorkGridItem = ({children,title ,id,thumbnails}:IWorkGridItem) => {
             <LinkOverlay 
                 as="div" 
                 href={`/works/${id}`}
+            >
+                <Text fontSize={20}>{title}</Text>
+            </LinkOverlay>
+            <Text fontSize={14}>{children as string }</Text>
+            </LinkBox> 
+        </Box>
+    )
+} 
+export const PostGridItem= ({children,title ,id,thumbnails}:IPostGridItem) => {
+    return(
+        <Box 
+        w='100%'
+        textAlign={'center'}
+        >
+            <LinkBox
+                as={NextLink} 
+                href ={`/posts/${id}`}
+                scroll={false} 
+                cursor="pointer"
+            > 
+            <Image src={thumbnails} 
+                alt={title}
+                className="grid-item-thumb"
+            />
+            <LinkOverlay 
+                as="div" 
+                href={`/posts/${id}`}
             >
                 <Text fontSize={20}>{title}</Text>
             </LinkOverlay>

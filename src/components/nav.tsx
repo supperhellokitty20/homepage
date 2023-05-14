@@ -139,8 +139,10 @@ export default function Nav(props:any) {
         textAlign="right"
         >
            <ThemeToggleButton/>
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}
+          >
+            <Menu isLazy id="navbar-menu"
+            >
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
@@ -153,6 +155,9 @@ export default function Nav(props:any) {
                 </MenuItem>
                 <MenuItem as={NextLink} href="/works">
                   Works
+                </MenuItem>
+                <MenuItem as={NextLink} href="/posts">
+                  Posts 
                 </MenuItem>
                 <MenuItem
                   as={Link}
