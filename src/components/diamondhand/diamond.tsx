@@ -12,6 +12,16 @@ function loadGLTFModel(
     options = { receiveShadow:true , castShadow:true} 
 ) { 
 
+    const MODEL_POS = { 
+      x:-0.25 ,
+      y:0 
+    }
+    const MODEL_SCALE = { 
+      x :8.7 , 
+      y :8.7, 
+      z :8.7 
+    }
+
     const {receiveShadow, castShadow } = options;    
     return new Promise((resolve, reject) => {
         const loader = new GLTFLoader();
@@ -22,8 +32,8 @@ function loadGLTFModel(
             (gltf) => {
                 const obj = gltf.scene;
                 obj.name = 'diamond';
-                obj.position.y = -0.4; 
-                obj.position.x = 0 ;
+                obj.position.y = MODEL_POS.x; 
+                obj.position.x = MODEL_POS.y;
                 obj.receiveShadow = receiveShadow;
                 obj.castShadow =  castShadow;
                 scene.add(obj);
@@ -102,13 +112,12 @@ const DiamondBoy = () => {
           refRenderer.current = renderer
           const scene = new THREE.Scene()
           // //Reduce the scale due to the size of the model
-          scene.scale.set(9, 9, 9) ;
+          scene.scale.set(8.5,8.5,8.5) ;
 
           const target = new THREE.Vector3(-0.5, 1.2, 0)
           const initialCameraPosition = new THREE.Vector3(
             20 * Math.sin(0.2 * Math.PI),
-            10,
-            20 * Math.cos(0.2 * Math.PI)
+            10,            20 * Math.cos(0.2 * Math.PI)
           )
     
           // 640 -> 240

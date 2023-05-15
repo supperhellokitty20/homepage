@@ -29,7 +29,7 @@ const Works:React.FC = ()=> {
                     mb={6}
                     pt={10}
                 > 
-                    <Heading as='h3'> Works  </Heading>
+                    <Heading as='h3' fontSize={20}> Works  </Heading>
                     <SimpleGrid columns={[1,1,2]} gap={6}>
                         <Section>
                             <WorkGridItem   title={'Moice'} id={'moice'} thumbnails={avatarThumb}> 

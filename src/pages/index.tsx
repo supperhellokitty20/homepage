@@ -31,6 +31,7 @@ export default function Home() {
     <Box
         borderRadius="lg"
         mb={6}
+        mt={1}
         p={3}
         textAlign="center"
         bg={useColorModeValue('blueAlpha.200', 'whiteAlpha.200')}
@@ -165,13 +166,13 @@ export default function Home() {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="mailto:bebi2kvip@master-rizz.lol" target="_blank">
+            <Link href="mailto:bebi2k_vip@master-rizz.lol" target="_blank">
               <Button
                variant="ghost"
                colorScheme="orange"
                leftIcon={<IoMail/>} 
               > 
-                bebi2kvip@master-rizz.lol
+                bebi2k_vip@master-rizz.lol
               </Button>
             </Link>
           </ListItem>
