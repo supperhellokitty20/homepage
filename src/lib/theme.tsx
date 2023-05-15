@@ -11,7 +11,7 @@ const styles:Styles = {
 }
 
 const config:ThemeConfig = { 
-    initialColorMode: localStorage.getItem('chakra-ui-color-mode')|| "dark",
+    initialColorMode:  "dark",
     useSystemColorMode: true,
 }
 
