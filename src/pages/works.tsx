@@ -2,7 +2,10 @@ import React from 'react'
 import Layout from '@/components/layouts/article'
 import Section from '@/components/section'
 import avatarThumb from '/public/avatar.png'
-import Paragraph from '@/components/paragraph'
+import oldPortThumb from '/public/works/old-port-thumb.png'
+import safeNightThumb from '/public/works/safe-night-thumb.png'
+import wolfThumb from '/public/works/wolf-thumb.png'
+
 import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {HiRocketLaunch } from "react-icons/hi2";
@@ -37,8 +40,13 @@ const Works:React.FC = ()=> {
                             </WorkGridItem>
                         </Section>
                         <Section delay={0.1}> 
-                            <WorkGridItem   title={'Blackwolf BBQ site'} id={'blackwolf'}  thumbnails={avatarThumb}> 
-                                This was a freelance jobs done for a local restaurant in Orrangle ville , Toronto
+                            <WorkGridItem   title={'Safe Night'} id={'safenight'}  thumbnails={safeNightThumb}> 
+                                Advance space management solution for shelter homes for savings lives  
+                            </WorkGridItem>
+                        </Section>
+                        <Section delay={0.1}> 
+                            <WorkGridItem   title={'Blackwolf BBQ site'} id={'blackwolf'}  thumbnails={wolfThumb}> 
+                                Freelance job for a local restaurant in Orangville , Toronto
                             </WorkGridItem>
                         </Section>
                         <Section delay={0.1}> 
@@ -47,11 +55,10 @@ const Works:React.FC = ()=> {
                             </WorkGridItem>
                         </Section>
                         <Section delay={0.1}> 
-                            <WorkGridItem   title={'Safe Night'} id={'safenight'}  thumbnails={avatarThumb}> 
-                                Advance space management solution for shelter homes for savings lives  
+                            <WorkGridItem   title={'Old portfolio'} id={'oldport'}  thumbnails={oldPortThumb}> 
+                                My old portfolio site
                             </WorkGridItem>
                         </Section>
-
                     </SimpleGrid>
                     <Section delay={0.2}>
                         <Divider my={5} mb={4} />

@@ -38,7 +38,7 @@ const Work = ()=> {
                     <ListItem>
                         <ArticleInfoBadge>Stack</ArticleInfoBadge> 
                         <span>
-                            React , WebRTC , PeerJS  
+                            React , WebRTC , PeerJS , Chakra UI 
                         </span>                    
                     </ListItem>
                     <ListItem>
@@ -50,6 +50,10 @@ const Work = ()=> {
                         <ArticleInfoBadge
                         >Demo</ArticleInfoBadge> 
                         <Link href="/" >Check it out <ExternalLinkIcon mx={2}/></Link>
+                    </ListItem>
+                    <ListItem> 
+                        <ArticleInfoBadge>Source</ArticleInfoBadge>
+                        <Link href="https://github.com/supperhellokitty20/moice-react" >Github <ExternalLinkIcon mx={2}/></Link>
                     </ListItem>
                 </List>
             </Container>

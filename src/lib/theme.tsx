@@ -12,7 +12,7 @@ const styles:Styles = {
 
 const config:ThemeConfig = { 
     initialColorMode:  "dark",
-    useSystemColorMode: true,
+    useSystemColorMode: false ,
 }
 
 const components = { 

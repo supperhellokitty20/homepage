@@ -5,9 +5,9 @@ import {
     ListItem ,
     Link
 } from '@chakra-ui/react'
-import exampleImage from '/public/works/wolf-1.png'
-import exampleImage2 from '/public/works/wolf-2.png'
 import Image from 'next/image'
+import exampleImage from '/public/works/old-port-1.png'
+import exampleImage2 from '/public/works/old-port-2.png' 
 import { 
     Title ,
     ArticleInfoBadge,
@@ -20,14 +20,14 @@ import Layout from '../../components/layouts/article'
 
 const Work = ()=> { 
     return ( 
-        <Layout title="moice">
+        <Layout title="oldport">
             <Container
             >
                 <Title>
-                    Black Wolf<Badge>2021</Badge>
+                    Old portfolio <Badge>2018</Badge>
                 </Title>
                 <P>
-                    A landing page for a local cowboy style restaurant in Orangeville,Canada. BTW the food was delicous and the owner was very nice. 
+                    My old portfolio page.
                 </P>
                 <List ml={4} my={3}>
                     <ListItem>
@@ -39,16 +39,17 @@ const Work = ()=> {
                     <ListItem>
                         <ArticleInfoBadge>Stack</ArticleInfoBadge> 
                         <span>
-                            Square
+                            HTML, CSS , Javascript,Firebase hosting 
                         </span>                    
                     </ListItem>
                     <ListItem>
                         <ArticleInfoBadge
                         >Live website</ArticleInfoBadge> 
-                        <Link href="https://theblackwolf.ca" >Check it out <ExternalLinkIcon mx={2}/></Link>
+                        <Link href="https://shecking-9983f.web.app/index.html" >Check it out <ExternalLinkIcon mx={2}/></Link>
                     </ListItem>
-                    <Image src={exampleImage} alt="Picture of the author" />
-                    <Image src={exampleImage2} alt="Picture of the author" />
+                    <Image src={exampleImage} alt="example image" />
+                    <Image src={exampleImage2} alt="example image" />
+
                 </List>
             </Container>
         </Layout>
