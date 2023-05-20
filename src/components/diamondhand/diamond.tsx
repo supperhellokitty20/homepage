@@ -112,7 +112,7 @@ const DiamondBoy = () => {
           refRenderer.current = renderer
           const scene = new THREE.Scene()
           // //Reduce the scale due to the size of the model
-          scene.scale.set(8.5,8.5,8.5) ;
+          scene.scale.set(7,7,7) ;
 
           const target = new THREE.Vector3(-0.5, 1.2, 0)
           const initialCameraPosition = new THREE.Vector3(
