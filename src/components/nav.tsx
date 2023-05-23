@@ -120,9 +120,9 @@ export default function Nav(props:any) {
           <NavLink href="/works" path={path}>
             Works
           </NavLink>
-          <NavLink href="/posts" path={path}>
+          {/* <NavLink href="/posts" path={path}>
             Posts 
-          </NavLink>
+          </NavLink> */}
           <NavLink
             href = "https://github.com/supperhellokitty20/homepage"
             path = {path}
