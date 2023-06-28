@@ -20,7 +20,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = ()=> { 
     return ( 
-        <Layout title="moice">
+        <Layout title="black-wolf">
             <Container
             >
                 <Title>

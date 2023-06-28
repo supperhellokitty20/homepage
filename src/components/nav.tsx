@@ -156,9 +156,6 @@ export default function Nav(props:any) {
                 <MenuItem as={NextLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={NextLink} href="/posts">
-                  Posts 
-                </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/supperhellokitty20/homepage"

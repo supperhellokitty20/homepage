@@ -22,5 +22,5 @@ const NotFound = () => {
     </Container>
   )
 }
-
 export default NotFound
+export {getServerSideProps} from '../components/chakra'
