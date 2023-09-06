@@ -39,6 +39,11 @@ const Works:React.FC = ()=> {
                                 A P2P video and messaging chat app used WebRTC technology  
                             </WorkGridItem>
                         </Section>
+                        <Section>
+                            <WorkGridItem   title={'docInspector'} id={'docInspector'} thumbnails={avatarThumb}> 
+                                A P2P video and messaging chat app used WebRTC technology  
+                            </WorkGridItem>
+                        </Section>
                         <Section delay={0.1}> 
                             <WorkGridItem   title={'Safe Night'} id={'safenight'}  thumbnails={safeNightThumb}> 
                                 Advance space management solution for shelter homes for savings lives  

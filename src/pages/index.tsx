@@ -43,7 +43,7 @@ export default function Home() {
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1} textAlign={'center'}>
           <Heading as="h2" variant="page-title">
-            Tuan Nguyen Duc Quang 
+            FireLord
           </Heading>
           <p>Digital Daydreamer( 👨‍💻/💭 )</p>
         </Box>
@@ -77,7 +77,7 @@ export default function Home() {
     <Section delay={0.1}> 
       <Heading as='h3' variant='section-title'>About</Heading> 
       <Paragraph>
-      I'm Tuan  and I am a developer who has a passion for traveling . 
+      I'm FireLord and I am a developer who has a passion for traveling . 
       I have always been fascinated by technology and its potential to transform people's lives, which is what inspired me to pursue a career in software development. 
       Through my work as a developer, I hope to create innovative solutions that make a positive impact on society while also fulfilling my desire to see the world and meet new people.
       </Paragraph>
@@ -101,12 +101,6 @@ export default function Home() {
       <BioSection>
         <BioYear>2000</BioYear>
         Born in Ho Chi Minh City , Viet Nam 
-      </BioSection>
-      <BioSection>
-        <BioYear>2017</BioYear>
-         <span>
-          Become an international student in Canada ‍🎓🇨🇦 
-         </span>
       </BioSection>
       <BioSection> 
         <BioYear>2019</BioYear>
@@ -151,17 +145,6 @@ export default function Home() {
                 leftIcon={<IoLogoGithub />}
               >
                 @bunbo_tainam
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/bi.dayne_" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="orange"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @bi.dayne_
               </Button>
             </Link>
           </ListItem>

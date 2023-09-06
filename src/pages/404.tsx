@@ -7,8 +7,16 @@ import {
   Divider,
   Button
 } from '@chakra-ui/react'
+import { useEffect } from 'react'
+import { getServerSideProps } from '../components/chakra'
 
 const NotFound = () => {
+  useEffect( 
+    () => {
+      getServerSideProps
+    },
+    []
+  )
   return (
     <Container>
       <Heading as="h1">Not found</Heading>
@@ -23,4 +31,3 @@ const NotFound = () => {
   )
 }
 export default NotFound
-export {getServerSideProps} from '../components/chakra'

@@ -24,7 +24,7 @@ const Logo = () => {
             color: 'inherit', 
             letterSpacing: 'tight',
         }} 
-        >Tuan Nguyen
+        > FireLord
         </Link>
     )
 }
