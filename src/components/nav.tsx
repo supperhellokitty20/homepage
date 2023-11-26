@@ -171,6 +171,12 @@ export default function Nav(props:any) {
                 >
                 Source
                 </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="http://blog.master-rizz.lol"
+                >
+                Blog 
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
