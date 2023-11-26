@@ -133,6 +133,15 @@ export default function Nav(props:any) {
           > 
           <IoLogoGithub/> Source
           </NavLink>
+          <NavLink
+            href="http://blog.master-rizz.lol" 
+            display= "inline-flex"
+            alignItems="center"
+            style = {{gap:4}}
+            pl= {2}
+          > 
+            Blog
+          </NavLink>
         </Stack>
         <Box 
         flex={1} 
