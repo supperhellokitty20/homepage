@@ -77,9 +77,9 @@ export default function Home() {
     <Section delay={0.1}> 
       <Heading as='h3' variant='section-title'>About</Heading> 
       <Paragraph>
-      I'm FireLord and I am a developer who has a passion for traveling . 
-      I have always been fascinated by technology and its potential to transform people's lives, which is what inspired me to pursue a career in software development. 
-      Through my work as a developer, I hope to create innovative solutions that make a positive impact on society while also fulfilling my desire to see the world and meet new people.
+        Hi, Welcome to my personal page . 
+        I'm currently a sys admin and i love infosec and hacking stuff
+        I also love lea
       </Paragraph>
       <Box  textAlign={'center'} my={4}> 
         <Button 
@@ -89,7 +89,7 @@ export default function Home() {
         rightIcon={<ChevronRightIcon/>}
         colorScheme='teal'
         >
-          My Portfolio
+          My Projects 
         </Button>
       </Box>
     </Section>
