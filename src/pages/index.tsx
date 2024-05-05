@@ -37,15 +37,15 @@ export default function Home() {
         bg={useColorModeValue('blueAlpha.200', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello there 👋 I&apos;m a developer , dreamer and artist from Viet Nam 🇻🇳  
+        Hello there 👋 I&apos;m a developer and a hobby photographer  from Viet Nam 🇻🇳  
     </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1} textAlign={'center'}>
           <Heading as="h2" variant="page-title">
-            FireLord
+            Tuan Nguyen
           </Heading>
-          <p>Digital Daydreamer( 👨‍💻/💭 )</p>
+          <p>Daydreaming( 👨‍💻/💭 )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -77,9 +77,8 @@ export default function Home() {
     <Section delay={0.1}> 
       <Heading as='h3' variant='section-title'>About</Heading> 
       <Paragraph>
-        Hi, Welcome to my personal page . 
-        I'm currently a sys admin and i love infosec and hacking stuff
-        I also love lea
+        I'm currently a System Administrator, but i have great passion for infosec and cybersecurity matters .
+        I also compete in CTF, checkout my team <Link href="https://ctftime.org/team/266022">ResetSec</Link> 
       </Paragraph>
       <Box  textAlign={'center'} my={4}> 
         <Button 
@@ -117,8 +116,8 @@ export default function Home() {
       </BioSection>
       <BioSection> 
         <BioYear>2022</BioYear>
-       System Engineer working for <Link href='https://www.dektech.com.au/our-company/'>DEK tech</Link>.
-       Job involves maintaining Telecommunication grade software  <Link href='https://www.ericsson.com/en/portfolio/cloud-software--services/cloud-core/communication-services--udm/cloud-ims/call-session-control-function'>CSCF</Link> .
+       Application Management Engineer  working for <Link href='https://www.endava.com'>Endava</Link>.
+       My daily responsibility is to maintain and response to emergency incident for the customer's infrastructure
       </BioSection>
     </Section>
     <Section delay={0.3}> 
@@ -160,6 +159,12 @@ export default function Home() {
             </Link>
           </ListItem>
         </List> 
+    </Section>
+    <Section>
+      <Heading as='h3' variant={'section-title'}>
+        CV
+      </Heading>
+      Check out my <Link href="/cv">CV</Link> in case you want to know more about me 
     </Section>
     </Container>
     </Layout>
