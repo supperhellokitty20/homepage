@@ -102,10 +102,6 @@ export default function Nav(props:any) {
             <Heading
               as ='h1'
             >
-              {/* <Link
-                as ={NextLink}
-                href = '/' 
-              >Logo</Link> */}
               <Logo/>
             </Heading>
           </Flex>
@@ -124,6 +120,15 @@ export default function Nav(props:any) {
             Posts 
           </NavLink> */}
           <NavLink
+            href="http://blog.master-rizz.lol" 
+            display= "inline-flex"
+            alignItems="center"
+            style = {{gap:4}}
+            pl= {2}
+          > 
+            Blog
+          </NavLink>
+          <NavLink
             href = "https://github.com/supperhellokitty20/homepage"
             path = {path}
             display= "inline-flex"
@@ -132,15 +137,6 @@ export default function Nav(props:any) {
             pl= {2}
           > 
           <IoLogoGithub/> Source
-          </NavLink>
-          <NavLink
-            href="http://blog.master-rizz.lol" 
-            display= "inline-flex"
-            alignItems="center"
-            style = {{gap:4}}
-            pl= {2}
-          > 
-            Blog
           </NavLink>
         </Stack>
         <Box 
@@ -167,15 +163,15 @@ export default function Nav(props:any) {
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/supperhellokitty20/homepage"
-                >
-                Source
-                </MenuItem>
-                <MenuItem
-                  as={Link}
                   href="http://blog.master-rizz.lol"
                 >
                 Blog 
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/supperhellokitty20/homepage"
+                >
+                Source
                 </MenuItem>
               </MenuList>
             </Menu>

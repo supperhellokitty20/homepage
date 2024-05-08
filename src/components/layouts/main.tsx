@@ -35,7 +35,7 @@ export default function RootLayout({
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <meta name="og:title" content="Tuan Nguyen" />
                 <meta property="og:type" content="website" />
-                <title> Fire-Homepage</title>
+                <title>Tuan Nguyen</title>
             </Head>
             <Nav path={router.asPath}></Nav>
             <Container maxW="container.md" pt={20}> 

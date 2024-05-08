@@ -4,15 +4,15 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
-const LogoSymbol = (props:any)=>{ 
-    return ( 
-           <svg
-            {...props}
-            > 
+// const LogoSymbol = (props:any)=>{ 
+//     return ( 
+//            <svg
+//             {...props}
+//             > 
             
-            </svg> 
-    )
-}
+//             </svg> 
+//     )
+// }
 
 
 //Draw logo here
@@ -24,7 +24,7 @@ const Logo = () => {
             color: 'inherit', 
             letterSpacing: 'tight',
         }} 
-        > FireLord
+        > TN 
         </Link>
     )
 }
