@@ -170,18 +170,28 @@ export default function Home() {
             <ListItem>
               <ListIcon as={HiRocketLaunch} />
               <Link href="/works/safenight">Safe Night</Link> won 2nd place at 2022 Lassonde's <Link href=""> BEST Lab</Link>&apos;s Start Up Experience&nbsp; 
-              (<Link as={NextLink} href="/best_startup_cert.pdf">Certificate<ExternalLinkIcon mx={1} /></Link>)
+              &nbsp;(
+              <Link as={NextLink} href="/best_startup_cert.pdf">Certificate<ExternalLinkIcon mx={1} /></Link> 
+              /&nbsp;<Link as={NextLink} href="https://lassonde.yorku.ca/best-startup-experience-2022">Article<ExternalLinkIcon mx={1} /></Link>
+              )  
               
             </ListItem>
             <ListItem>
               <ListIcon as={HiRocketLaunch}/>
-              7th place in <Link href="https://ctftime.org/event/2067/"> Urmia CTF 2023 </Link>
-              &nbsp;(Our team use to be called "Reset")
+              Ranked <strong>7/467</strong> in <Link href="https://ctftime.org/event/2067/"> Urmia CTF 2023 </Link>
+              &nbsp;("Reset" team)
+            </ListItem>
+            <ListItem>
+              <ListIcon as={HiRocketLaunch}/>
+              Ranked <strong>16/398</strong> in <Link href="https://ctftime.org/event/2288">cr3 CTF 2024</Link>
             </ListItem>
             <ListItem>
               <ListIcon as={HiRocketLaunch} />
-              21th place in <Link href="https://ctftime.org/event/2030"> Patriot CTF 2023</Link>
-              &nbsp;(<Link as={NextLink} href="/best_startup_cert.pdf">Certificate<ExternalLinkIcon mx={1} /></Link>)
+              Ranked <strong>23/987</strong> in <Link href="https://ctftime.org/event/2030"> Patriot CTF 2023</Link>
+            </ListItem>
+            <ListItem>
+              <ListIcon as={HiRocketLaunch} />
+              Ranked <strong>106/3101</strong>in <Link href="https://ctftime.org/event/2255">Cyber Apocalypse 2024: Hacker Royale</Link>
             </ListItem>
           </List>
         </Section>

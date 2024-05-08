@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '@/components/layouts/article'
 import Section from '@/components/section'
-import avatarThumb from '/public/avatar.png'
 import oldPortThumb from '/public/works/old-port-thumb.png'
 import safeNightThumb from '/public/works/safe-night-thumb.png'
 import wolfThumb from '/public/works/wolf-thumb.png'
+import moiceThumb from '/public/works/moice-thumb.png'
 import {
     Container,
     Heading,
@@ -26,7 +26,7 @@ const Works:React.FC = ()=> {
                     <Heading as='h3' fontSize={20}> Works  </Heading>
                     <SimpleGrid columns={[1,1,2]} gap={6}>
                         <Section>
-                            <WorkGridItem   title={'Moice'} id={'moice'} thumbnails={avatarThumb}> 
+                            <WorkGridItem   title={'Moice'} id={'moice'} thumbnails={moiceThumb}> 
                                 A P2P video and messaging chat app used WebRTC technology  
                             </WorkGridItem>
                         </Section>
