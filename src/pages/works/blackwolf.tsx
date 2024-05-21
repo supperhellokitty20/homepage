@@ -13,7 +13,6 @@ import {
     ArticleInfoBadge,
 } from '../../components/work'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import Section from '@/components/section'
 import P from '@/components/paragraph'
 
 import Layout from '../../components/layouts/article'

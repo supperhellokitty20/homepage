@@ -67,7 +67,7 @@ export default function Home() {
               borderRadius="full"
               overflow="hidden"
             >
-              <ProfileImage
+              <ProfileImage 
                 src="/avatar.png"
                 alt="Profile image"
                 borderRadius="full"
@@ -191,7 +191,8 @@ export default function Home() {
             </ListItem>
             <ListItem>
               <ListIcon as={HiRocketLaunch} />
-              Ranked <strong>106/3101</strong>in <Link href="https://ctftime.org/event/2255">Cyber Apocalypse 2024: Hacker Royale</Link>
+              Ranked <strong>106/3101</strong>in <Link href="https://ctftime.org/event/2255">Cyber Apocalypse 2024: Hacker Royale</Link>&nbsp;
+              (<Link as={NextLink} href="/Certificate-FireLord.pdf">Certificate<ExternalLinkIcon mx={1} /></Link>) 
             </ListItem>
           </List>
         </Section>
