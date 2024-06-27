@@ -84,7 +84,8 @@ const DiamondBoy = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const refRenderer = useRef()
-    const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.master-rizz.lol/static':'')+'/voxel-compressed.glb' 
+    // const modelPath = (process.env.NODE_ENV=='production' ? 'https://cdn.finexe.net/static':'')+'/voxel-compressed.glb' 
+    const modelPath = '/voxel-compressed.glb' 
     // const modelPath = "https://cdn.master-rizz.lol/static/diamond_hands.glb"
     const handleWindowResize = useCallback(() => {
         const { current: renderer } = refRenderer
